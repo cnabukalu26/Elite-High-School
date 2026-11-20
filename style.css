@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #b90e20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8.5%;
+    border-bottom: 3px solid #f5a000;
+    position: relative;
+    z-index: 10;
+} 
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: white;
+    border: 3px solid #f5a000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #b90e20;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.school-name h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+}
+
+.school-name p {
+    font-size: 11px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffc247;
+}
+
+.nav-links .apply-btn {
+    background: #f5a000;
+    color: #222;
+    padding: 12px 18px;
+    border-radius: 9px;
+}
+
+.nav-links .apply-btn:hover {
+    background: #ffc247;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    width: 100%;
+    min-height: 565px;
+    background-image: url("school-gate.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 70px 8.5%;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.35)
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin-left: 17.5%;
+    margin-top: 5px;
+}
+
+.motto {
+    display: inline-block;
+    background: #f5a000;
+    color: #171717;
+    padding: 7px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 26px;
+}
+
+.description {
+    color: white;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 470px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #f5a000;
+    color: #171717;
+    border: 2px solid #f5a000;
+}
+
+.btn-primary:hover {
+    background: #ffc247;
+    border-color: #ffc247;
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #b90e20;
+}
+
+.about-section,
+.campus-section,
+.gallery-section,
+.contact-section,
+.apply-section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.about-section h2,
+.campus-section h2,
+.gallery-section h2,
+.contact-section h2,
+.apply-section h2 {
+    font-size: 30px;
+    color: #b90e20;
+    margin-bottom: 20px;
+}
+
+.about-section p,
+.campus-section p,
+.gallery-section p,
+.contact-section p,
+.apply-section p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.campus-section {
+    background: #f8f4f4;
+}
+
+.gallery-section {
+    background: white;
+}
+
+.contact-section {
+    background: #f8f4f4;
+}
+
+.apply-section {
+    background: #b90e20;
+    color: white;
+}
+
+.apply-section h2,
+.apply-section p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    line-height: 2;
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero-content {
+        margin-left: 8%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 70px;
+        padding: 0 5%;
+    }
+
+    .school-name h2 {
+        font-size: 14px;
+    }
+
+    .school-name p {
+        font-size: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 67px;
+        left: 0;
+        width: 100%;
+        background: #b90e20;
+        flex-direction: column;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 600px;
+        padding: 50px 6%;
+        background-position: center;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        letter-spacing: -1px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .about-section,
+    .campus-section,
+    .gallery-section,
+    .contact-section,
+    .apply-section {
+        padding: 55px 7%;
+    }
+
+    .about-section h2,
+    .campus-section h2,
+    .gallery-section h2,
+    .contact-section h2,
+    .apply-section h2 {
+        font-size: 24px;
+    }
+
+}

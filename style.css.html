@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite High School Entebbe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo-section">
+            <div class="logo">
+                <img src="logo.png" alt="School Logo"
+                     onerror="this.style.display='none'; this.parentElement.textContent='EHS';">
+            </div>
+
+            <div class="school-name">
+                <h2>Elite High School</h2>
+                <p>Entebbe · Walk the Talk</p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#campus">Campus life</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#apply" class="apply-btn">Apply</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+    </header>
+
+    <section class="hero" id="about">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="motto">
+                Walk the Talk · Titus 2:7
+            </span>
+
+            <h1>
+                Where<br>
+                character<br>
+                leads the way
+            </h1>
+
+            <p class="description">
+                Elite High School Entebbe helps young people grow in
+                knowledge, discipline and faith, on a bright campus in
+                Entebbe, Uganda.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#apply" class="btn-primary">
+                    Apply Now
+                </a>
+
+                <a href="#about" class="btn-secondary">
+                    Discover More
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="about-section" id="learning">
+
+        <h2>Welcome to Elite High School</h2>
+
+        <p>
+            At Elite High School Entebbe, we believe that education
+            builds knowledge, character and confidence. We are committed
+            to helping every student achieve their full potential.
+        </p>
+
+    </section>
+
+    <section class="campus-section" id="campus">
+
+        <h2>Experience Campus Life</h2>
+
+        <p>
+            Discover a learning environment that encourages discipline,
+            teamwork, leadership and personal growth.
+        </p>
+
+    </section>
+
+
+    <section class="gallery-section" id="gallery">
+
+        <h2>Our School Gallery</h2>
+
+        <p>Explore life and activities at Elite High School.</p>
+
+    </section>
+
+    <section class="contact-section" id="contact">
+
+        <h2>Contact Elite High School</h2>
+
+        <p>Entebbe, Uganda</p>
+
+    </section>
+
+    <section class="apply-section" id="apply">
+
+        <h2>Join Elite High School</h2>
+
+        <p>Take the next step towards a brighter future.</p>
+
+        <a href="mailto:info@example.com" class="btn-primary">
+            Apply Today
+        </a>
+
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Elite High School Entebbe.
+            All Rights Reserved.
+        </p>
+        <p>Walk the Talk · Titus 2:7</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links")
+                .classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
